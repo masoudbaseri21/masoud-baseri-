@@ -34,7 +34,7 @@
           </a>
         </div>
         <div class="navbar-items">
-          <a href="#home" class="ithem">
+          <a href="#home" class="ithem home-style">
             <i class="fas fa-home"></i> <b>Home</b>
           </a>
           <a href="#about" class="ithem">
@@ -65,7 +65,7 @@
     <div class="hidden">
       <ul>
         <li class="li-ithems">
-          <a href="#home" class="ithems home-style">
+          <a href="#home" class="ithems">
             <i class="fas fa-home"></i> <b>Home</b>
           </a>
         </li>
@@ -140,12 +140,11 @@
 
     <script>
       $(".header").mouseenter(function(){
-        $(".home-style").css({"color":"white","background-color":"rgba(0,0,0,0.2)","border-radius":"5px"})
+        $(".home-style").css({"color":"red","background-color":"rgba(0,0,0,0.2)","border-radius":"5px"})
       });
       $(".header").mouseleave(function(){
         $(".home-style").css({"background-color":"transparent","color":"black","border-radius":"0"})
       });
-
 </script>
 <script>
 
@@ -204,6 +203,16 @@
           el.classList.add("button-show");
         });
       });
+
+      $(".logo").click(function(e) {
+  e.preventDefault();
+  document.querySelector('.header').scrollIntoView({ behavior: 'smooth' });
+});
+$(".home-style").click(function(e) {
+  e.preventDefault();
+  document.querySelector('.header').scrollIntoView({ behavior: 'smooth' });
+});
+
     </script>
   </body>
 </html>
