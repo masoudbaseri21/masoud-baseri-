@@ -153,22 +153,21 @@ table {
   z-index: 1000;
 }
 
-.navbar-icon {
-  display: flex; /* اضافه شده برای چیدمان افقی */
-  align-items: center;
-  width: 100%;
-  justify-content: space-between; /* برای فاصله منطقی بین بخش‌ها */
-}
+/* .navbar-icon {
+  /* display: flex; اضافه شده برای چیدمان افقی */
+/* align-items: center; */
+/* width: 100%; */
+/* justify-content: space-between; برای فاصله منطقی بین بخش‌ها */
+/* } */
 
 .logo {
   text-decoration: none;
-  color: black;
+  color: rgb(12, 12, 12);
   font-size: 20px;
   display: flex;
   align-items: center;
   cursor: pointer;
   font-weight: 700;
-  text-shadow: 2px 2px 10px rgb(255, 255, 255);
 }
 
 .logo-picture {
@@ -183,7 +182,7 @@ table {
   display: flex; /* برای چیدمان لینک‌ها یا آیتم‌ها */
   justify-content: flex-end; /* سمت راست چین */
   align-items: center;
-  width: 45%;
+  /* width: 45%; */
   gap: 10px; /* فاصله بین آیتم‌ها */
 }
 .ithem {
@@ -193,8 +192,6 @@ table {
   display: block;
 }
 .ithem:hover {
-  /* background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 6px; */
   color: white !important;
 }
 .menu {
@@ -343,9 +340,13 @@ table {
 }
 
 /*mobile*/
-@media only screen and (max-width: 450px) and (min-width: 200px) {
+@media only screen and (max-width: 400px) and (min-width: 200px) {
   .icon-logo {
     width: 30%;
+  }
+  .logo,
+  .menu {
+    margin-top: 5px;
   }
   .menu {
     display: block;
@@ -368,7 +369,7 @@ table {
     margin-right: 0px;
   }
   .hidden {
-    top: 40px;
+    top: 50px;
     /* max-height: 0;
     opacity: 0; */
     overflow: hidden;
@@ -383,5 +384,8 @@ table {
     position: relative;
     /* top: 60px; */
     padding: 0 5px; /* در حالت مخفی padding صفر یا کم باشد */
+  }
+  .header {
+    top: 51px;
   }
 }
