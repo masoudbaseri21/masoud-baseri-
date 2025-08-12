@@ -182,7 +182,7 @@ table {
   justify-content: flex-end; /* سمت راست چین */
   align-items: center;
   width: 45%;
-  gap: 5px; /* فاصله بین آیتم‌ها */
+  gap: 10px; /* فاصله بین آیتم‌ها */
 }
 .ithem {
   color: black !important;
