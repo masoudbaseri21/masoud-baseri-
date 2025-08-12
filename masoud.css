@@ -169,7 +169,9 @@ table {
   cursor: pointer;
   font-weight: 700;
 }
-
+.logo :hover {
+  color: white;
+}
 .logo-picture {
   border-radius: 50%;
   width: 40px; /* اندازه مشخص و ثابت بهتر است */
@@ -364,6 +366,13 @@ table {
     display: flex;
     margin: -16px;
     width: 100%;
+    margin-left: -48px;
+  }
+  .button {
+    display: grid;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
   }
   .home-text {
     margin-right: 0px;
