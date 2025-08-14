@@ -127,6 +127,11 @@
             <button class="hire"><b>HIRE ME <i class='fas fa-arrow-right'></i></b></button>
             <button class="view-portfolio"><b>VIEW PORTFOLIO <i class='fas fa-arrow-right'></i></b></button>
           </div>
+          <div class="link">
+            <a href="https://www.instagram.com/masoudbaserii?igsh=NzlxeGZiMmRnZHBu" class="instagram-link">Instagram<i class='fas fa-plus' style="font-size: 10px;"></i></a>
+            <a href="https://t.me/baserii" class="telegram-link">Telegram<i class='fas fa-plus' style="font-size: 10px;"></i></a>
+            <a href="https://github.com/masoudbaseri21" class="github-link">Github<i class='fas fa-plus' style="font-size: 10px;"></i></a>
+          </div>
         </div>
       </div>
       <div class="aside-bar"></div>
@@ -205,6 +210,27 @@
         const textElements = document.querySelectorAll(".view-portfolio");
         textElements.forEach((el) => {
           el.classList.add("button-show");
+        });
+      });
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const textElements = document.querySelectorAll(".instagram-link");
+        textElements.forEach((el) => {
+          el.classList.add("show-link");
+        });
+      });
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const textElements = document.querySelectorAll(".github-link");
+        textElements.forEach((el) => {
+          el.classList.add("show-github");
+        });
+      });
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const textElements = document.querySelectorAll(".telegram-link");
+        textElements.forEach((el) => {
+          el.classList.add("show-telegram");
         });
       });
 
