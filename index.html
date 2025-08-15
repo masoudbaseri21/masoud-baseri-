@@ -68,7 +68,7 @@
     <div class="hidden">
       <ul>
         <li class="li-ithems">
-          <a href="#home" class="ithems">
+          <a href="#home" class="ithems home-hidden">
             <i class="fas fa-home"></i> <b>Home</b>
           </a>
         </li>
@@ -113,7 +113,7 @@
         </div>
         <div div="image-profile">
           <img
-            src="IMG_20231202_171646_145-removebg-preview.png"
+            src="2.png"
             alt="Profile Image" class="profile-image"
           /></div>
         </div>
@@ -134,7 +134,32 @@
           </div>
         </div>
       </div>
-      <div class="aside-bar"></div>
+      <!-- <div class="About">
+        <div class="aboute-section">
+          <img src="IMG_20250808_154114_723.jpg" alt="" class="image-aboute">
+          <div class="text aboute">
+            Sure! Here is a conversational and natural English version of your text:
+
+***
+
+Hi, I’m Masoud Baseri Bakhshaish. I was born on May 23, 1995, originally from Tehran with Azeri roots, but I live in Karaj now. Since I was a teenager, I’ve always been really into computers. Although I initially started studying Electrical Power Engineering, I left after two semesters and moved to Karaj to study Urban Planning, which I graduated in.
+
+However, my passion for problem-solving and technology led me to programming. I began working in web development and have built skills in frontend technologies like HTML, CSS, JavaScript, jQuery, Bootstrap, and React, as well as backend with PHP. So far, I have about five years of solid experience in this field.
+
+Besides programming, I’ve been practicing fitness for over twelve years and hold a fitness coaching certificate. Thanks to years of consistent training, I maintain a healthy lifestyle and high energy levels.
+
+I’m also a firefighter in Karaj, where being responsible and physically prepared is crucial due to the demanding nature of the job. Combining my technical skills, sports discipline, and practical experience has helped me perform at my best and also inspire my colleagues and friends toward a healthier lifestyle.
+
+I love programming because I enjoy solving problems and creating useful solutions. I’m always eager to learn new technologies and improve my skills. I believe that mixing technical knowledge with dedication and physical fitness has strengthened me in all areas of life.
+
+I hope that with the knowledge I’ve gained in programming, I can help you learn and support you on your journey to grow in this field.
+
+***
+
+If you want, I can help make it more formal or friendly depending on your audience!
+          </div> -->
+        </div>
+      </div>
       <div class="section"></div>
       <div class="article"></div>
       <div class="footer"></div>
@@ -242,6 +267,37 @@ $(".home-style").click(function(e) {
   e.preventDefault();
   document.querySelector('.header').scrollIntoView({ behavior: 'smooth' });
 });
+
+$(".home-hidden").click(function(e) {
+  e.preventDefault();
+  document.querySelector('.header').scrollIntoView({ behavior: 'smooth' });
+});
+// hidden-menu
+// $(document).ready(function(){
+
+// کنترل باز و بسته شدن منو با دکمه یا المان با کلاس "menu"
+// $(".menu").click(function(){
+//     if($(".hidden").hasClass("bars")) {
+        // منو باز است، آن را ببند
+    //     $(".hidden").removeClass("bars");
+    // } else {
+        // منو بسته است، آن را باز کن
+//         $(".hidden").addClass("bars");
+//     }
+// });
+
+// کلیک روی آیتم‌های منو با کلاس "home-hidden"
+// $(".home-hidden").click(function(){
+    // نمایش دیو header
+    // $(".header").show();
+
+    // بستن منوی اصلی در صورت باز بودن
+//     if($(".hidden").hasClass("bars")){
+//         $(".hidden").removeClass("bars");
+//     }
+// });
+
+// });
 
     </script>
   </body>
