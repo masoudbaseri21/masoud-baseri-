@@ -129,10 +129,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-* {
-  font-family: "Roboto", sans-serif;
+@font-face {
+  font-family: "MozillaText Variable";
+  src: url("font/MozillaText-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* برای فونت متغیر */
+  font-display: swap;
 }
-
+body {
+  font-family: "MozillaText Variable";
+}
 .body {
   background-color: rgb(255, 255, 255);
   width: 100%;
