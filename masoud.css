@@ -485,4 +485,7 @@ body {
   .header {
     top: 51px;
   }
+  .home {
+    top: 20px;
+  }
 }
