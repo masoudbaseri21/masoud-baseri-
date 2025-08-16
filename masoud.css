@@ -374,7 +374,7 @@ body {
   transform: translateX(0);
 }
 .telegram-link {
-  border: 1px solid;
+  border: 2px solid white;
   border-radius: 5px;
   color: rgb(255, 255, 255) !important;
   text-align: center;
@@ -391,7 +391,7 @@ body {
   transform: translateY(0);
 }
 .github-link {
-  border: 1px solid;
+  border: 2px solid white;
   border-radius: 5px;
   color: rgb(255, 255, 255) !important;
   text-align: center;
