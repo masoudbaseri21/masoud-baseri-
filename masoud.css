@@ -214,7 +214,7 @@ body {
   transition: max-height 0.9s ease, opacity 0.9s ease;
   pointer-events: none; /* در حالت مخفی به کلیک واکنش ندهد */
   background: linear-gradient(
-    0deg,
+    180deg,
     rgba(34, 193, 195, 1) 0%,
     rgba(255, 247, 0, 1) 100%
   );
@@ -235,7 +235,7 @@ body {
   pointer-events: auto; /* فعال برای تعامل */
   padding: 5px; /* padding اصلی منو */
   background: linear-gradient(
-    0deg,
+    180deg,
     rgba(34, 193, 195, 1) 0%,
     rgba(255, 247, 0, 1) 100%
   );
@@ -522,9 +522,8 @@ body {
     /* pointer-events: none; در حالت مخفی به کلیک واکنش ندهد */
     background: linear-gradient(
       180deg,
-      rgba(0, 89, 255, 1) 0%,
-      rgba(240, 242, 240, 1) 100%,
-      rgba(0, 0, 0, 1) 100%
+      rgba(34, 193, 195, 1) 0%,
+      rgba(255, 247, 0, 1) 100%
     );
     position: relative;
     /* top: 60px; */
