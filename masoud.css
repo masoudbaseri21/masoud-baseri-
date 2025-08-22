@@ -537,7 +537,14 @@ body {
     position: relative;
     top: 60px;
   }
-  .Aboute .image-aboute .text-aboute {
-    width: 300px;
+  .Aboute,
+  .image-aboute,
+  .text-aboute,
+  .aboute-section-text,
+  .aboute-section {
+    width: 100%;
+  }
+  .Aboute {
+    right: 9px;
   }
 }
