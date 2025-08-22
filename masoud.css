@@ -145,12 +145,7 @@ body {
   top: 0;
 }
 .navbar {
-  /* background-color: #22c1c3; */
-  background: linear-gradient(
-    90270deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(255, 247, 0, 1) 100%
-  );
+  background-color: #22c1c3;
   position: fixed;
   top: 0;
   width: 100%;
@@ -274,16 +269,12 @@ body {
     rgba(34, 193, 195, 1) 0%,
     rgba(255, 247, 0, 1) 100%
   ); */
-  /* background: linear-gradient(
+  background: linear-gradient(
     180deg,
     rgba(34, 193, 195, 1) 0%,
     rgba(255, 247, 0, 1) 100%
-  ); */
-  background: linear-gradient(
-    90270deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(255, 247, 0, 1) 100%
   );
+
   top: 40px;
   position: fixed;
   overflow: hidden; /* جلوگیری از ایجاد اسکرول */
