@@ -234,6 +234,11 @@ body {
   transition: max-height 0.9s ease, opacity 0.9s ease;
   pointer-events: auto; /* فعال برای تعامل */
   padding: 5px; /* padding اصلی منو */
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(255, 247, 0, 1) 100%
+  );
 }
 
 .li-ithems {
