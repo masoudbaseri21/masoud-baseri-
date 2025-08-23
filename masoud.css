@@ -542,9 +542,8 @@ body {
   .text-aboute,
   .aboute-section-text,
   .aboute-section {
-    width: 100%;
-  }
-  .Aboute {
-    right: 9px;
+    max-width: 96%;
+    margin: 0px auto;
+    /* box-shadow: none; */
   }
 }
