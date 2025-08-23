@@ -114,7 +114,7 @@
         </div>
         <div div="image-profile">
           <img
-            src="2.png"
+            src="3.png"
             alt="Profile Image" class="profile-image"
           /></div>
         </div>
@@ -153,6 +153,7 @@ I love programming because I enjoy solving problems and creating useful solution
 I hope that with the knowledge I’ve gained in programming, I can help you learn and support you on your journey to grow in this field.
 
           </div>
+          <span class="btn" id="toggleBtn">Read more</span>
         </div>
       </div>
       <div class="section"></div>
@@ -176,25 +177,19 @@ I hope that with the knowledge I’ve gained in programming, I can help you lear
       });
 </script>
 <script>
+const menu = document.querySelector(".menu");   // دکمه منو
+const hidden = document.querySelector(".hidden"); // جعبه منو
 
-      const menu = document.querySelector(".menu"); // اولین المنت با کلاس menu
-      const hidden = document.querySelector(".hidden"); // اولین المنت با کلاس ithems
+menu.addEventListener("click", () => {
+  if (hidden.classList.contains("bars")) {
+    // بستن منو
+    hidden.classList.remove("bars");
+  } else {
+    // باز کردن منو
+    hidden.classList.add("bars");
+  }
+});
 
-      menu.addEventListener("click", () => {
-        if (hidden.classList.contains("bars")) {
-          // بستن منو
-          hidden.classList.remove("bars");
-          setTimeout(() => {
-            hidden.style.display = "none";
-          }, 500);
-        } else {
-          // باز کردن منو
-          hidden.style.display = "flex"; // یا block اگر بهتر است
-          setTimeout(() => {
-            hidden.classList.add("bars");
-          }, 10);
-        }
-      });
 
       window.addEventListener("DOMContentLoaded", () => {
         const textElements = document.querySelectorAll(".home-text");
@@ -266,6 +261,14 @@ $(".home-style").click(function(e) {
 $(".home-hidden").click(function(e) {
   e.preventDefault();
   document.querySelector('.header').scrollIntoView({ behavior: 'smooth' });
+});
+
+const text = document.querySelector(".text-aboute"); 
+const btn = document.getElementById("toggleBtn");
+
+btn.addEventListener("click", () => {
+  text.classList.toggle("show"); 
+  btn.innerText = text.classList.contains("show") ? "close" : "Read more";
 });
 // hidden-menu
 // $(document).ready(function(){
